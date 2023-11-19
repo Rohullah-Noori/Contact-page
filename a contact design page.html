@@ -1,0 +1,87 @@
+<html>
+<head>
+<style type="text/css">
+body{
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background: gray;
+    font-size: 20px;
+    font-family: sans-serif;
+}.container{
+ cursor: pointer;
+    width:100%;
+    height: 300px;
+    display: flex;
+    background: darkseagreen;
+    justify-content: center;
+    align-items: center;
+    margin-top: 300px;
+}.container .box{
+    position:relative;
+    width: 300px;
+    height: 100px;
+    border-right: 1px solid black;
+justify-content: center;
+align-items: center;
+box-sizing: border-box;
+text-align: center;
+}.container .box:last-child{
+    border: none;
+}.container .box .icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:100%;
+    height:100%;
+    transition: 0.5s;
+    font: 20px;
+}.container .box .icon .img{
+    padding-right: 20px;
+    transition:0.5s;
+}.container .box:hover .icon{
+    transform: translateY(-130px);
+}.container .box:hover .icon .img{
+    font-size:29px;
+    transform: translateY(130px);
+    z-index:-1;
+    opacity:0.5;
+    transition: 0.5s;
+transition-delay: 0.5s;
+}.container .box .detail{
+    position:absolute;
+    transform: translateY(100px);
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+    font:20px;
+    top: 0;
+    left: 0;
+    font: 30px;
+}.container .box:hover .detail{
+    transform: translateY(0%);
+}
+</style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <div class="icon"><img class="img" src="lock.ICO">our country</div>
+            <div class="detail">Afghanistan</div>
+        </div>
+        <div class="box">
+            <div class="icon"><img class="img" src="call.ico">cantact</div>
+            <div class="detail">+93731142295</div>
+        </div>
+        <div class="box">
+            <div class="icon"><img class="img" src="emil.ICO">Email</div>
+            <div class="detail">rohullahnoori@gmail.com</div>
+        </div>
+    </div>
+</body>
+</html>
